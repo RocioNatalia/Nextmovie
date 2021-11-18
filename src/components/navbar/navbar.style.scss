@@ -1,0 +1,82 @@
+@use 'sass:map';
+@import '../../assets/styles/color-palette.scss';
+
+.navbar {
+  background: var(--gradient-background);
+  height: 70px;
+  width: 100vw;
+  position: fixed;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    padding: 0 30px;
+    display: flex;
+
+    a {
+      align-self: center;
+
+      h1 {
+        padding-right: 50px;
+      }
+
+      p {
+        padding: 10px;
+        color: var(--color-text);
+      }
+    }
+  }
+
+  .buttons {
+    padding: 0 30px;
+    a {
+      background-color: var(--color-logo);
+      color: var(--color-text);
+      font-size: 14px;
+      padding: 7px 17px;
+      border-radius: 3px;
+    }
+
+    a:hover {
+      cursor: pointer;
+      background-color: var(--color-logo-dark);
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    color: var(--color-logo);
+    font-size: 35px;
+    margin: 0;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    .logo {
+      padding: 0 10px;
+      a {
+        h1 {
+          padding-right: 20px;
+        }
+
+        p {
+          display: none;
+        }
+      }
+    }
+
+    .buttons {
+      a {
+        display: none;
+      }
+    }
+  }
+}

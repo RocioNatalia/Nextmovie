@@ -1,0 +1,25 @@
+.movie-item {
+  margin: 0 5px;
+  height: 140px;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .image {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 5px;
+
+    .title {
+      width: 100%;
+      text-align: center;
+      color: var(--color-text);
+      background: var(--gradient-background);
+      margin: 0;
+    }
+  }
+}

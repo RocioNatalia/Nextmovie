@@ -1,0 +1,36 @@
+.preview {
+  padding: 65px 30px 30px;
+
+  .carousel {
+    margin-bottom: 40px;
+    .styles-module_carousel-arrow__26sRw {
+      z-index: 1;
+      height: 100%;
+      width: 30px;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+
+      &[data-direction='right'] {
+        background: url('../../assets/icons/keyboard_arrow_right.svg') no-repeat
+          center;
+        background-color: var(--gradient-background-white);
+      }
+
+      &[data-direction='left'] {
+        background: url('../../assets/icons/keyboard_arrow_left.svg') no-repeat
+          center;
+        background-color: var(--gradient-background-white);
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .preview {
+    padding: 65px 20px 20px;
+    .carousel {
+      margin-bottom: 30px;
+    }
+  }
+}

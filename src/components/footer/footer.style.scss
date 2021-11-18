@@ -1,0 +1,40 @@
+.footer {
+  border-top: solid 1px var(--color-dark-text);
+  height: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .a-footer {
+    display: flex;
+    margin-bottom: 8px;
+    padding: 5px;
+    align-items: center;
+
+    .logo-github {
+      margin-left: 10px;
+      background-image: url('../../assets/icons/github.png');
+      background-size: cover;
+      width: 25px;
+      height: 25px;
+    }
+
+    .logo-react {
+      margin-left: 10px;
+      background-image: url('../../assets/icons/react.png');
+      background-size: cover;
+      width: 64px;
+      height: 20px;
+    }
+  }
+}
