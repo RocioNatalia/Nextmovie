@@ -24,7 +24,7 @@ class Navbar extends React.Component {
           </Link>
         </div>
         <div className='buttons'>
-          <Link to='/'>Log out</Link>
+          <Link to='/'>Sing out</Link>
         </div>
       </div>
     );

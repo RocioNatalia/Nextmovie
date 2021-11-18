@@ -1,14 +1,10 @@
 import './App.css';
-import Navbar from './components/navbar/navbar.component';
-
-import Footer from './components/footer/footer.component';
+import Landing from './pages/landing/landing.component';
 
 function App() {
   return (
     <div>
-      <Navbar />
-
-      <Footer />
+      <Landing />
     </div>
   );
 }
