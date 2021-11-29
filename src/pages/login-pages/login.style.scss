@@ -1,0 +1,90 @@
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  .form {
+    background: var(--gradient-background);
+    width: 300px;
+    border-radius: 4px;
+    padding: 60px 68px 40px;
+    .form-title {
+      font-size: 25px;
+      font-weight: 700;
+      color: var(--text-white);
+    }
+
+    .form-message {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .form-input {
+      height: 50px;
+      margin: 20px 0;
+    }
+
+    .custom-button {
+      margin-top: 40px;
+      font-size: 18px;
+      height: 35px;
+    }
+
+    .under-button {
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-dark);
+      font-size: 12px;
+      margin: 5px 0;
+
+      a {
+        color: var(--white-text);
+      }
+    }
+  }
+}
+.login-google {
+  margin: 40px 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+
+  .google-logo {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    background: url('../../assets/icons/google.svg');
+    background-size: cover;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.new-reg {
+  font-size: 14px;
+  a {
+    color: var(--color-logo);
+  }
+}
+
+.tyc {
+  font-size: 14px;
+
+  a {
+    color: var(--white-text);
+  }
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    display: flex;
+    justify-content: space-around;
+    .form {
+      background: var(--gradient-background);
+      width: 440px;
+      border-radius: 8px;
+      padding: 20px 10px 30px;
+    }
+  }
+}

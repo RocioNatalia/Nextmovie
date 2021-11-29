@@ -24,7 +24,7 @@ class Preview extends React.Component {
             <h3>{genre.description}</h3>
             <Carousel
               show={window.innerWidth / 300}
-              slide={2}
+              slide={4}
               transition={0.5}
               useArrowKeys={true}
               resposible={true}

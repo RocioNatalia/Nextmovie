@@ -11,15 +11,16 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className='navbar'>
-        <div className='logo'>
-          <Link to='/browse'>
-            <h1>Nextmovie</h1>
-          </Link>
+        <div className='left-menu'>
+          <div className='logo-button'>
+            <Link to='/browse'>Nextmovie</Link>
+          </div>
+
           <Link to='/browse'>
             <p>Home</p>
           </Link>
 
-          <Link to='/'>
+          <Link to='/list/fav'>
             <p>My list</p>
           </Link>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CustomInput from '../../components/custom-input/custom-input.component';
 
 import Footer from '../../components/footer/footer.component';
 
@@ -9,23 +10,33 @@ const Landing = () => (
   <div className='background-landing'>
     <div className='landing'>
       <div className='bar-landing'>
-        <div className='logo'>
-          <h1>Nextmovie</h1>
-        </div>
-        <div className='button'>
-          <Link to='/browse'>Sing in</Link>
+        <div className='logo-button'>Nextmovie</div>
+        <div className='custom-button'>
+          <Link to='/login'>Sing in</Link>
         </div>
       </div>
       <div className='text-landing'>
-        <p style={{ fontSize: 55 }}>
+        <p className='text-xl'>
           Unlimited movies,
           <br /> TV shows, and more.
         </p>
-        <p style={{ fontSize: 25 }}>Watch anywhere. Cancel anytime.</p>
-        <p style={{ fontSize: 18 }}>
+        <p className='text-md'>Watch anywhere. Cancel anytime.</p>
+        <p className='text-sm'>
           Ready to watch? Enter your email to create or restart your membership.
         </p>
-        <input></input>
+        <div className='email-zone'>
+          <CustomInput
+            name='email'
+            label='Email address'
+            type='email'
+            size={
+              window.innerWidth < 600
+                ? window.innerWidth / 1.5
+                : window.innerWidth / 3
+            }
+          />
+          <button className='custom-button'>Get Started</button>
+        </div>
       </div>
     </div>
     <Footer />

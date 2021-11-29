@@ -1,6 +1,6 @@
 .footer {
-  background: var(--color-background);
-  border-top: solid 1px var(--color-dark-text);
+  background: var(--background-black);
+  border-top: solid 1px var(--dark-text);
   height: 120px;
   width: 100%;
   display: flex;
@@ -10,7 +10,7 @@
 
   a {
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--white-text);
 
     &:hover {
       cursor: pointer;

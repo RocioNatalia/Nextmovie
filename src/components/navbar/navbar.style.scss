@@ -12,20 +12,19 @@
   justify-content: space-between;
   align-items: center;
 
-  .logo {
+  .left-menu {
     padding: 0 30px;
     display: flex;
 
+    .logo-button {
+      margin-right: 50px;
+    }
+
     a {
       align-self: center;
-
-      h1 {
-        padding-right: 50px;
-      }
-
       p {
         padding: 10px;
-        color: var(--color-text);
+        color: var(--white-text);
       }
     }
   }
@@ -34,7 +33,7 @@
     padding: 0 30px;
     a {
       background-color: var(--color-logo);
-      color: var(--color-text);
+      color: var(--white-text);
       font-size: 14px;
       padding: 7px 17px;
       border-radius: 3px;

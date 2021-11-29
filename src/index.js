@@ -6,6 +6,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import Browse from './pages/browse/browse.component';
+import Login from './pages/login-pages/login/login.component';
+import Registration from './pages/login-pages/registration/registration.component';
+import LogInHelp from './pages/login-pages/help/login-help.component';
 
 const rootElement = document.getElementById('root');
 
@@ -15,6 +18,9 @@ ReactDOM.render(
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='browse' element={<Browse />} />
+        <Route path='login' element={<Login />} />
+        <Route path='registration' element={<Registration />} />
+        <Route path='loginHelp' element={<LogInHelp />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
