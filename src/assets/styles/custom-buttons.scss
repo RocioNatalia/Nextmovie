@@ -15,6 +15,8 @@
   }
 
   a {
+    text-align: center;
+    width: 100%;
     text-decoration: none;
     color: var(--white-text);
   }
@@ -41,5 +43,40 @@
     text-decoration: none;
     color: var(--color-logo);
     font-size: 35px;
+  }
+}
+
+.custom-explore-more {
+  margin: 15px 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .title-explore {
+    font-size: 20px;
+  }
+
+  .explore-more {
+    margin-left: 10px;
+    font-size: 14px;
+    color: transparent;
+  }
+}
+
+.custom-explore-more:hover .explore-more {
+  animation: fade-in 1s ease;
+  color: var(--blue-text);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translate(0, 30px);
   }
 }

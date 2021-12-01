@@ -1,0 +1,26 @@
+.movie-list {
+  min-height: 85vh;
+  padding: 65px 30px 30px;
+
+  .list-title {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+
+  .list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .list-item {
+      width: 255px;
+      margin: 15px 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .list-container {
+    place-content: center;
+  }
+}

@@ -21,7 +21,11 @@ class Preview extends React.Component {
       <div className='preview'>
         {this.state.genres.map((genre) => (
           <div className='carousel'>
-            <h3>{genre.description}</h3>
+            <div className='custom-explore-more'>
+              <div className='title-explore'>{genre.description}</div>{' '}
+              <div className='explore-more'>explore more ▶</div>
+            </div>
+
             <Carousel
               show={window.innerWidth / 300}
               slide={4}

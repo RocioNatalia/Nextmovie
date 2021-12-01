@@ -9,6 +9,7 @@ import Browse from './pages/browse/browse.component';
 import Login from './pages/login-pages/login/login.component';
 import Registration from './pages/login-pages/registration/registration.component';
 import LogInHelp from './pages/login-pages/help/login-help.component';
+import ListPage from './pages/list-page/list-page.component';
 
 const rootElement = document.getElementById('root');
 
@@ -16,11 +17,12 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App />} />
+        <Route path='/nextmovie' element={<App />} />
         <Route path='browse' element={<Browse />} />
         <Route path='login' element={<Login />} />
         <Route path='registration' element={<Registration />} />
         <Route path='loginHelp' element={<LogInHelp />} />
+        <Route path='list/fav' element={<ListPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

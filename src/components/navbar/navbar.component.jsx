@@ -20,16 +20,24 @@ class Navbar extends React.Component {
             <p>Home</p>
           </Link>
 
+          <div>
+            <p>Movies</p>
+          </div>
+
           <Link to='/list/fav'>
             <p>My list</p>
           </Link>
         </div>
         <div className='buttons'>
-          <Link to='/'>Sing out</Link>
+          <Link to='/nextmovie'>Sing out</Link>
         </div>
       </div>
     );
   }
 }
+
+
+
+
 
 export default Navbar;

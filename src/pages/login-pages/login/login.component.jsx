@@ -11,9 +11,8 @@ const Login = () => (
     <div className='landing'>
       <div className='bar-landing'>
         <div className='logo-button'>
-          <Link to='/'>Nextmovie</Link>
+          <Link to='/nextmovie'>Nextmovie</Link>
         </div>
-      
       </div>
 
       <div className='form-container'>

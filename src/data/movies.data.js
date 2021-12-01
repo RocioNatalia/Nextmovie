@@ -9,6 +9,7 @@ const DATA_MOVIES = [
     country: 'Costa Rica',
     year: 1973,
     imageUrl: 1,
+    fav: true,
   },
   {
     id: 'QLP25FCI9HW',
@@ -31,6 +32,7 @@ const DATA_MOVIES = [
     country: 'India',
     year: 2000,
     imageUrl: 3,
+    fav: true,
   },
   {
     id: 'SZJ76CGP8WK',
@@ -53,6 +55,7 @@ const DATA_MOVIES = [
     country: 'China',
     year: 1991,
     imageUrl: 5,
+    fav: true,
   },
   {
     id: 'AFN21SJO4ST',
@@ -75,6 +78,7 @@ const DATA_MOVIES = [
     country: 'Sweden',
     year: 1987,
     imageUrl: 7,
+    fav: true,
   },
   {
     id: 'JDH55VYB1TG',
@@ -86,6 +90,7 @@ const DATA_MOVIES = [
     country: 'Chile',
     year: 1971,
     imageUrl: 8,
+    fav: true,
   },
   {
     id: 'AKU34URW3PN',
@@ -97,6 +102,7 @@ const DATA_MOVIES = [
     country: 'Indonesia',
     year: 2013,
     imageUrl: 9,
+    fav: true,
   },
   {
     id: 'BPY66BDK6RG',

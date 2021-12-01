@@ -11,7 +11,7 @@ const LogInHelp = () => (
     <div className='landing'>
       <div className='bar-landing'>
         <div className='logo-button'>
-          <Link to='/'>Nextmovie</Link>
+          <Link to='/nextmovie'>Nextmovie</Link>
         </div>
         <div className='custom-button'>
           <Link to='/login'>Sing in</Link>
